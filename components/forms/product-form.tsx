@@ -15,6 +15,7 @@ type ProductFormProps = {
     min_stock: number;
     active: boolean;
   };
+  onSuccess?: () => void;
 };
 
 const emptyState = {
@@ -28,7 +29,7 @@ const emptyState = {
   active: true
 };
 
-export function ProductForm({ product }: ProductFormProps) {
+export function ProductForm({ product, onSuccess }: ProductFormProps) {
   const router = useRouter();
   const [form, setForm] = useState({
     name: product?.name ?? emptyState.name,
@@ -81,6 +82,10 @@ export function ProductForm({ product }: ProductFormProps) {
     }
 
     router.refresh();
+    
+    if (onSuccess) {
+      onSuccess();
+    }
   }
 
   return (

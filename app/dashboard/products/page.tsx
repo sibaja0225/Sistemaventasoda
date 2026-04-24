@@ -1,7 +1,6 @@
 import { ensureRole } from "@/lib/auth";
 import { getProducts } from "@/lib/dashboard-data";
-import { ProductForm } from "@/components/forms/product-form";
-import { formatCurrency } from "@/lib/utils";
+import { ProductsClient } from "@/components/products-client";
 
 export default async function ProductsPage() {
   await ensureRole(["admin", "manager"]);
@@ -14,46 +13,7 @@ export default async function ProductsPage() {
         <p>Registra alimentos, bebidas y cualquier articulo que vendas en la soda.</p>
       </header>
 
-      <div className="two-columns">
-        <article className="card">
-          <h2>Nuevo producto</h2>
-          <ProductForm />
-        </article>
-        <article className="card">
-          <h2>Catalogo actual</h2>
-          <div className="table-wrap">
-            <table>
-              <thead>
-                <tr>
-                  <th>Producto</th>
-                  <th>SKU</th>
-                  <th>Precio</th>
-                  <th>Stock</th>
-                  <th>Estado</th>
-                </tr>
-              </thead>
-              <tbody>
-                {products.map((product) => (
-                  <tr key={product.id}>
-                    <td>
-                      <strong>{product.name}</strong>
-                      <div className="muted">{product.category}</div>
-                    </td>
-                    <td>{product.sku}</td>
-                    <td>{formatCurrency(product.sale_price)}</td>
-                    <td>{product.stock}</td>
-                    <td>
-                      <span className={`status-badge ${product.active ? "status-ok" : "status-neutral"}`}>
-                        {product.active ? "Activo" : "Inactivo"}
-                      </span>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </article>
-      </div>
+      <ProductsClient products={products} />
     </section>
   );
 }

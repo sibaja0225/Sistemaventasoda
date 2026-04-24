@@ -143,6 +143,12 @@ textarea {
   color: white;
 }
 
+.button-small {
+  padding: 0.5rem 0.8rem;
+  font-size: 0.85rem;
+  border-radius: 10px;
+}
+
 .dashboard-shell {
   display: grid;
   grid-template-columns: 270px 1fr;
