@@ -1,7 +1,7 @@
 :root {
-  --primary: #6D28D9;     /* Morado logo */
-  --secondary: #2563EB;  /* Azul logo */
-  --bg: #FFFFFF;         /* Blanco */
+  --primary: #6D28D9;
+  --secondary: #2563EB;
+  --bg: #FFFFFF;
   --card: #FFFFFF;
   --text: #0F172A;
   --muted: #64748B;
@@ -48,7 +48,7 @@ a {
   padding: 18px;
   border-radius: 18px;
   background: white;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
 }
 
 .brand strong {
@@ -162,7 +162,7 @@ textarea {
   padding: 12px 14px;
   border-radius: 14px;
   border: 1px solid var(--line);
-  background: white;
+  background: #ffffff;
   color: var(--text);
   outline: none;
 }
@@ -204,14 +204,11 @@ button,
 }
 
 button:hover,
-.button:hover {
-  background: #5B21B6;
-}
-
+.button:hover,
 .button-secondary:hover,
 .button-danger:hover {
-  opacity: 0.92;
   transform: translateY(-1px);
+  opacity: 0.92;
 }
 
 /* TABLES */
@@ -227,7 +224,7 @@ table {
 th {
   text-align: left;
   background: #DBEAFE;
-  color: #0F172A;
+  color: #2563EB;
   padding: 14px;
   font-size: 0.85rem;
   text-transform: uppercase;
