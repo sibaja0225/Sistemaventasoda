@@ -3,8 +3,8 @@ import type { ReactNode } from "react";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Sistema de ventas para soda",
-  description: "Control de ventas, inventario y reportes para pequenos negocios"
+  title: "Soda POS",
+  description: "El sabor de administrar tu negocio fácilmente."
 };
 
 export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
