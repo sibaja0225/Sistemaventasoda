@@ -19,6 +19,14 @@ Aplicacion web full-stack para controlar ventas, inventario, facturacion basica,
 - Reportes diarios y mensuales
 - Gestion de usuarios por roles
 
+## Configuracion
+
+1. Crea un archivo `.env.local` basado en `.env.example`.
+2. Coloca tu `NEXT_PUBLIC_SUPABASE_URL` y tu `NEXT_PUBLIC_SUPABASE_ANON_KEY`.
+3. Abre el editor SQL de Supabase y ejecuta el archivo [sql/supabase-schema.sql](/C:/Users/Mariángel/Documents/Codex/2026-04-23/necesito-tu-ayuda-creandome-una-aplicacion/sql/supabase-schema.sql).
+4. Instala dependencias con `npm.cmd install`.
+5. Ejecuta el proyecto con `npm.cmd run dev`.
+
 ## Roles
 
 - `admin`: acceso total, productos, inventario, reportes y usuarios
