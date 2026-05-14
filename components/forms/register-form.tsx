@@ -65,7 +65,7 @@ export function RegisterForm() {
         />
       </div>
       <div className="field">
-        <label htmlFor="register-password">Contrasena</label>
+        <label htmlFor="register-password">Contraseña</label>
         <input
           id="register-password"
           type="password"
