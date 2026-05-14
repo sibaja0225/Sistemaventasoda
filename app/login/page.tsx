@@ -18,7 +18,7 @@ export default async function LoginPage({
           className="login-logo"
         />
 
-        <h1>Bienvenido a Sabor POS</h1>
+        <h1> Sabor POS</h1>
 
         <p>El sabor de administrar tu negocio fácilmente.</p>
 
