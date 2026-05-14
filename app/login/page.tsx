@@ -11,14 +11,31 @@ export default async function LoginPage({
   return (
     <main className="auth-shell">
       <section className="auth-card">
-        <h1>Bienvenida a tu sistema de soda</h1>
-        <p>Inicia sesion para administrar ventas, inventario, reportes y usuarios.</p>
-        {params.error ? <div className="alert alert-error">{params.error}</div> : null}
-        {params.success ? <div className="alert alert-success">{params.success}</div> : null}
+
+        <img
+          src="/sabor-pos-logo.svg"
+          alt="Sabor POS"
+          className="login-logo"
+        />
+
+        <h1>Bienvenido a Sabor POS</h1>
+
+        <p>El sabor de administrar tu negocio fácilmente.</p>
+
+        {params.error ? (
+          <div className="alert alert-error">{params.error}</div>
+        ) : null}
+
+        {params.success ? (
+          <div className="alert alert-success">{params.success}</div>
+        ) : null}
+
         <LoginForm />
+
         <p className="muted">
           No tienes cuenta? <Link href="/register">Crear cuenta</Link>
         </p>
+
       </section>
     </main>
   );
