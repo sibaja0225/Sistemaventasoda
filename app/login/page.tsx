@@ -21,16 +21,16 @@ export default async function LoginPage({
           }}
         >
 
-          <img
-            src="/sabor-pos-logo.png"
-            alt="Sabor POS"
-            style={{
-              width: "24px",
-              height: "24px",
-              objectFit: "contain",
-              flexShrink: 0
-            }}
-          />
+    <img
+  src="/sabor-pos-logo.png"
+  alt="Sabor POS"
+  style={{
+    width: "42px",
+    height: "42px",
+    objectFit: "contain",
+    flexShrink: 0
+  }}
+/>
 
           <div>
             <h1 style={{ margin: 0 }}>Soda POS</h1>
