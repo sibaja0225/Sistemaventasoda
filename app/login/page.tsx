@@ -11,8 +11,8 @@ export default async function LoginPage({
   return (
     <main className="auth-shell">
       <section className="auth-card">
-        <h1>Bienvenida a tu sistema de soda</h1>
-        <p>Inicia sesion para administrar ventas, inventario, reportes y usuarios.</p>
+        <h1>Soda POS</h1>
+        <p>El sabor de administrar tu negocio fácilmente.</p>
         {params.error ? <div className="alert alert-error">{params.error}</div> : null}
         {params.success ? <div className="alert alert-success">{params.success}</div> : null}
         <LoginForm />
