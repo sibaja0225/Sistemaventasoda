@@ -33,7 +33,7 @@ export default async function LoginPage({
 />
 
           <div>
-            <h1 style={{ margin: 0 }}>Soda POS</h1>
+            <h1 style={{ margin: 0 }}>Sabor POS</h1>
             <p style={{ marginTop: "4px" }}>
               El sabor de administrar tu negocio fácilmente.
             </p>
