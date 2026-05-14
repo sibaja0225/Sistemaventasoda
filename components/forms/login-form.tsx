@@ -42,7 +42,7 @@ export function LoginForm() {
         <input id="email" type="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
       </div>
       <div className="field">
-        <label htmlFor="password">Contrasena</label>
+        <label htmlFor="password">Contraseña</label>
         <input
           id="password"
           type="password"
