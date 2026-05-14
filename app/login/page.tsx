@@ -25,7 +25,7 @@ export default async function LoginPage({
   src="/sabor-pos-logo.png"
   alt="Sabor POS"
   style={{
-    width: "111px",
+    width: "98px",
     height: "108px",
     objectFit: "contain",
     flexShrink: 0
