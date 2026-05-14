@@ -1,40 +1,61 @@
-# Sistema de ventas para soda
+Sabor POS
 
-Aplicacion web full-stack para controlar ventas, inventario, facturacion basica, reportes y usuarios en un pequeno negocio tipo soda.
+Sistema web diseñado para la gestión de ventas, inventario y facturación básica en pequeños negocios tipo soda.
+Permite administrar productos, controlar existencias, registrar ventas y generar reportes de manera rápida y sencilla.
 
-## Tecnologias
+Tecnologías utilizadas
+Next.js 
+React
+Supabase Auth
+Base de datos PostgreSQL
 
-- Next.js 15
-- React 19
-- Supabase Auth + Base de datos PostgreSQL
-- Route Handlers de Next.js como backend
+Funcionalidades principales
 
-## Modulos incluidos
+Inicio de sesión y registro de usuarios
+Dashboard con resumen general del sistema
+Gestión y registro de productos
+Control de inventario
+Registro de ventas
+Generación de facturas básicas
+Reportes diarios y mensuales
+Administración de usuarios por roles
+Roles del sistema
 
-- Inicio de sesion y creacion de cuenta
-- Dashboard con resumen general
-- Registro de productos
-- Control de inventario
-- Registro de ventas con factura basica
-- Reportes diarios y mensuales
-- Gestion de usuarios por roles
+Acceso completo al sistema:
 
-## Configuracion
+Productos
+Inventario
+Ventas
+Reportes
+Gestión de usuarios
 
-1. Crea un archivo `.env.local` basado en `.env.example`.
-2. Coloca tu `NEXT_PUBLIC_SUPABASE_URL` y tu `NEXT_PUBLIC_SUPABASE_ANON_KEY`.
-3. Abre el editor SQL de Supabase y ejecuta el archivo [sql/supabase-schema.sql](/C:/Users/Mariángel/Documents/Codex/2026-04-23/necesito-tu-ayuda-creandome-una-aplicacion/sql/supabase-schema.sql).
-4. Instala dependencias con `npm.cmd install`.
-5. Ejecuta el proyecto con `npm.cmd run dev`.
+Manager tiene acceso a:
 
-## Roles
+Productos
+Inventario
+Reportes
 
-- `admin`: acceso total, productos, inventario, reportes y usuarios
-- `manager`: productos, inventario y reportes
-- `cashier`: ventas, consulta de productos y panel principal
+Cashier(cajero) tiene acceso a:
 
-## Notas importantes
+Ventas
+Consulta de productos
+Panel principal
 
-- El primer usuario que se registre queda como `admin`.
-- Las ventas usan una funcion SQL transaccional para descontar inventario automaticamente.
-- Si ya tienes una base creada en Supabase, puedes adaptar o fusionar el script SQL con tus tablas actuales.
+Notas importantes
+El primer usuario registrado obtiene automáticamente el rol admin.
+Las ventas utilizan una función SQL transaccional para descontar inventario automáticamente.
+El sistema utiliza autenticación con Supabase Auth.
+Si ya existe una base de datos en Supabase, el script SQL puede adaptarse o fusionarse con las tablas actuales.
+
+Estructura general del sistema
+
+Autenticación de usuarios
+Gestión de productos
+Inventario
+Ventas y facturación
+Reportes
+Gestión de usuarios
+
+Objetivo del proyecto
+
+Sabor POS busca facilitar la administración de pequeños negocios tipo soda mediante una plataforma moderna, rápida y fácil de usar, optimizando el control de ventas e inventario en un solo sistema.
