@@ -12,17 +12,31 @@ export default async function LoginPage({
     <main className="auth-shell">
       <section className="auth-card">
 
-        <div className="login-brand">
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: "10px",
+            marginBottom: "16px"
+          }}
+        >
 
           <img
             src="/sabor-pos-logo.png"
             alt="Sabor POS"
-            className="login-brand-logo"
+            style={{
+              width: "24px",
+              height: "24px",
+              objectFit: "contain",
+              flexShrink: 0
+            }}
           />
 
           <div>
-            <h1>Soda POS</h1>
-            <p>El sabor de administrar tu negocio fácilmente.</p>
+            <h1 style={{ margin: 0 }}>Soda POS</h1>
+            <p style={{ marginTop: "4px" }}>
+              El sabor de administrar tu negocio fácilmente.
+            </p>
           </div>
 
         </div>
